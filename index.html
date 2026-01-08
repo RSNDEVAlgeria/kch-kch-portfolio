@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nassim Kechtouli | Graphic Designer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass-panel">
+        <div class="logo" style="font-weight: 700; font-size: 1.2rem;">NK.</div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#work" data-i18n="nav_work">Work</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="lang-switch">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content animate-me hidden">
+            <h1 data-i18n="hero_title">Hello, I'm Nassim Kechtouli</h1>
+            <p data-i18n="hero_subtitle">Graphic Designer & Adobe Illustrator Specialist</p>
+            <div class="cta-group">
+                <a href="#work" class="cta-btn" data-i18n="hero_cta">View My Work</a>
+                <a href="#" class="cta-btn secondary" data-i18n="hero_cv">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="portfolio">
+        <h2 class="section-title animate-me hidden" data-i18n="section_work">Selected Works</h2>
+
+        <div class="grid">
+            <!-- Placeholder Projects -->
+            <div class="glass-card project-card animate-me hidden">
+                <div class="project-info">
+                    <h3 data-i18n="project_1_title">Geometric Animals</h3>
+                    <p data-i18n="project_1_desc">Vector Illustration</p>
+                </div>
+            </div>
+            <div class="glass-card project-card animate-me hidden">
+                <div class="project-info">
+                    <h3 data-i18n="project_2_title">TechStartup Brand</h3>
+                    <p data-i18n="project_2_desc">Identity Design</p>
+                </div>
+            </div>
+            <div class="glass-card project-card animate-me hidden">
+                <div class="project-info">
+                    <h3 data-i18n="project_3_title">Retro Poster Series</h3>
+                    <p data-i18n="project_3_desc">Print Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" style="padding: 6rem 2rem;">
+        <h2 class="section-title" data-i18n="section_skills">My Skills</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <div class="glass-card skill-card" style="text-align: center;">
+                <h3>Adobe Illustrator</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="glass-card skill-card" style="text-align: center;">
+                <h3>Adobe Photoshop</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="glass-card skill-card" style="text-align: center;">
+                <h3>Figma (UI/UX)</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="glass-card skill-card" style="text-align: center;">
+                <h3>Brand Identity</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="padding: 6rem 2rem; background: rgba(255,255,255,0.2);">
+        <div class="glass-card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 class="section-title" data-i18n="section_about">About Me</h2>
+            <p data-i18n="about_text" style="line-height: 1.8; color: var(--text-main);">
+                I am a passionate graphic designer with a keen eye for detail. Specializing in vector art and brand
+                identity using Adobe Illustrator, I bring concepts to life through clean, modern visuals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title" data-i18n="section_contact">Get in Touch</h2>
+        <form class="glass-card contact-form">
+            <div class="form-group">
+                <input type="text" data-i18n-placeholder="contact_name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" data-i18n-placeholder="contact_email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea rows="5" data-i18n-placeholder="contact_message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="cta-btn" style="border:none; cursor:pointer;" data-i18n="contact_submit">Send
+                Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_copy">© 2024 Nassim Kechtouli. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
